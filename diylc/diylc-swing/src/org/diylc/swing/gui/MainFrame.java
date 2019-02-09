@@ -75,6 +75,7 @@ import org.diylc.swing.plugins.canvas.CanvasPlugin;
 import org.diylc.swing.plugins.cloud.CloudPlugIn;
 import org.diylc.swing.plugins.config.ConfigPlugin;
 import org.diylc.swing.plugins.edit.EditMenuPlugin;
+import org.diylc.swing.plugins.eurorack.EurorackPowerPlugin;
 import org.diylc.swing.plugins.file.FileFilterEnum;
 import org.diylc.swing.plugins.file.FileMenuPlugin;
 import org.diylc.swing.plugins.help.HelpMenuPlugin;
@@ -124,6 +125,7 @@ public class MainFrame extends JFrame implements ISwingUI {
     presenter.installPlugin(new EditMenuPlugin(this));
     presenter.installPlugin(new ConfigPlugin(this));
     presenter.installPlugin(new LayersMenuPlugin(this));
+    presenter.installPlugin(new EurorackPowerPlugin(this));
     presenter.installPlugin(new CloudPlugIn(this));
     presenter.installPlugin(new HelpMenuPlugin(this));
 
